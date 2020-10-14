@@ -1,0 +1,16 @@
+def average_temp(temps):
+  sum_of_temps= 0
+  for temp in temps:
+    sum_of_temps += temp
+  return sum_of_temps/len(temps)
+def average_temp2(temps):
+    average=sum(temps)/len(temps)
+    return average
+
+
+if __name__ == '__main__':
+  temps = [21,30,21,40,21,32,21,90]
+  
+  average = average_temp2(temps)
+  
+  print("El promedio es: {}".format(average))
